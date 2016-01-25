@@ -1,0 +1,5 @@
+couchbase.nodes:
+- http://localhost:8091/pools
+couchbase.bucket: productinfo
+couchbase.password: admin123
+couchbase.username: admin
