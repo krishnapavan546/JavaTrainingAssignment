@@ -1,0 +1,3 @@
+org\gmart\retailer\epricing\bean\PriceBean.class
+org\gmart\retailer\epricing\controller\PriceController.class
+org\gmart\retailer\epricing\PriceApplication.class

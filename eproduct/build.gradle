@@ -17,7 +17,7 @@ allprojects {
 dependencies {    
    
     compile "io.dropwizard:dropwizard-core:0.7.0"
-    compile "com.couchbase.client:couchbase-client:1.4.1"
+    compile "com.couchbase.client:java-client:2.0.0"
     compile "org.apache.commons:commons-lang3:3.3.1"
     
         

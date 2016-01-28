@@ -11,9 +11,10 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import org.codehaus.jettison.json.JSONArray;
-import org.codehaus.jettison.json.JSONObject;
 import org.gmart.retailer.beans.ProductInfo;
+
+import com.couchbase.client.java.document.json.JsonArray;
+import com.couchbase.client.java.document.json.JsonObject;
 
 
  
@@ -41,9 +42,9 @@ public class XMLMarshalling {
 	            JAXBContext context = JAXBContext.newInstance(ProductInfo.class);
 	            Unmarshaller un = context.createUnmarshaller();
 	            ProductInfo order = (ProductInfo) un.unmarshal(new File(FILE_NAME));
-	            JSONObject jsonObject=new JSONObject();
-	            JSONArray jsonArray=new JSONArray();
-	            jsonArray.put(order);
+	            JsonObject jsonObject = null;
+	            JsonArray jsonArray =null;
+	            jsonArray.add(order);
 	           // ((Map<String, String>) jsonObject).putAll(items);
 	            System.out.println("here you see JSOn Array"+jsonObject);
 	            System.out.println("here you see InquireEnterpriseOrderListResponseInfo Object"+order.toString());
