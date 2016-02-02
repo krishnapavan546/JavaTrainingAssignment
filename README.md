@@ -7,7 +7,7 @@ Project has 3 services :
 
 2.ePricing microservice
 
-3.ClientService Service
+3.ClientService(CustomerNode) Service
 
 eProduct serice is running on jetty server on port 8080. To run this service , run Application.java as SpringBoot application . Following are the end points of this service :
 
